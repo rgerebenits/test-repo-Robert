@@ -1,3 +1,5 @@
+(important info to not miss :) - in the UI suite, login is not a targeted test deliberately, as the credentials are shared for everyone and are the "gateway" to access the whole web app, so I skipped them and focused on the "actual" system under test)
+
 # Cypress UI & API Test Suite
 
 UI and API test suite built using [Cypress](https://www.cypress.io/).

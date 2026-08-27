@@ -110,6 +110,6 @@ ESLint and Prettier are configured, with `eslint-config-prettier`:
 npm run lint
 ```
 
-## Artefacts & reporting
+## Artefacts/reporting
 
-Screenshots, videos and reports are written to `cypress/screenshots/` (git-ignored)
+Screenshots are written to `cypress/screenshots/` (git-ignored)

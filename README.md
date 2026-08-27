@@ -19,7 +19,7 @@ UI tests run against the [Sauce Demo](https://www.saucedemo.com/) shop, API test
 nvm use && npm ci
 ```
 
-> Use `npm ci` rather than `npm install` so the exact versions from `package-lock.json` are used.
+> Use `npm ci` rather than `npm install` (but this can be used too) so the exact versions from `package-lock.json` are used.
 
 Verify the Cypress binary:
 

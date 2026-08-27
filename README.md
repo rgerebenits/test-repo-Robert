@@ -5,9 +5,10 @@ UI tests run against the [Sauce Demo](https://www.saucedemo.com/) shop, API test
 
 ## Prerequisites
 
-| Tool          | Version    | Notes                                                                                       |
-| ------------- | ---------- | ------------------------------------------------------------------------------------------- |
+| Tool          | Version    | Notes                                                                                        |
+| ------------- | ---------- | -------------------------------------------------------------------------------------------  |
 | Node.js       | `v20.20.1` | as pinned in `.nvmrc`                                                                        |
+| nvm           |            |                                                                                              |
 | npm           | `10.x`     |                                                                                              |
 | Git           | any        |                                                                                              |
 | Google Chrome | optional   | only needed for `npm run test:chrome` — the default run uses the bundled Electron browser    |
@@ -107,10 +108,8 @@ ESLint and Prettier are configured, with `eslint-config-prettier`:
 
 ```bash
 npm run lint
-npm run format:check
 ```
 
 ## Artefacts & reporting
 
-Screenshots, videos and reports are written to `cypress/screenshots/`, `cypress/videos/` and
-`cypress/reports/` — all git-ignored.
+Screenshots, videos and reports are written to `cypress/screenshots/` (git-ignored)

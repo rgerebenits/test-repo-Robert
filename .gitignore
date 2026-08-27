@@ -1,1 +1,19 @@
+# dependencies
 node_modules/
+
+# secrets / local config
+.env
+.env.*
+!.env.example
+cypress.env.json
+
+# editor
+.DS_Store
+.idea/
+.vscode/
+
+# cypress artifacts
+cypress/screenshots/
+cypress/videos/
+cypress/downloads/
+cypress/reports/

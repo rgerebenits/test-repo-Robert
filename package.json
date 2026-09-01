@@ -26,6 +26,8 @@
     "test": "cypress run",
     "test:chrome": "cypress run --browser chrome",
     "test:headed": "cypress run --headed --no-exit",
+    "test:ui": "cypress run --spec 'cypress/e2e/tests/**/*.cy.js'",
+    "test:api": "cypress run --spec 'cypress/e2e/api-tests/**/*.cy.js'",
     "prepare": "husky"
   },
   "lint-staged": {

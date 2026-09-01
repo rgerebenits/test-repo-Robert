@@ -1,10 +1,10 @@
 Cypress.Commands.add('login', () => {
   cy.visit('/');
-  cy.get('[data-test="username"]').type(Cypress.env('username'));
-  cy.get('[data-test="password"]').type(Cypress.env('password'), {
-    log: false,
+  cy.env(['username', 'password']).then(({ username, password }) => {
+    cy.get('[data-test="username"]').type(username);
+    cy.get('[data-test="password"]').type(password, { log: false });
+    cy.get('[data-test="login-button"]').click();
   });
-  cy.get('[data-test="login-button"]').click();
   cy.location('pathname').should('eq', '/inventory.html');
 });
 
